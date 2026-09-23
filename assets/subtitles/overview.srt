@@ -1,0 +1,112 @@
+1
+00:00:00,500 --> 00:00:04,703
+How can a robot move through confined three-dimensional spaces?
+
+2
+00:00:05,200 --> 00:00:11,600
+It must coordinate its route, posture,
+and the body motion it can actually execute.
+
+3
+00:00:12,500 --> 00:00:14,996
+Our method keeps a shared clearance core.
+
+4
+00:00:15,307 --> 00:00:21,600
+Each platform supplies body geometry,
+response bounds, and native command limits.
+
+5
+00:00:22,500 --> 00:00:27,023
+A lower posture command does not instantly lower the robot.
+
+6
+00:00:27,573 --> 00:00:32,330
+Queued commands and finite response determine when the body changes.
+
+7
+00:00:32,880 --> 00:00:38,725
+We predict an enclosing cylinder whose
+height and radius follow that execution.
+
+8
+00:00:40,500 --> 00:00:44,831
+Checking predicted poses alone can miss contact between them.
+
+9
+00:00:45,381 --> 00:00:51,141
+We enlarge endpoint envelopes using bounded motion and shape-change rates.
+
+10
+00:00:51,691 --> 00:00:58,219
+Their union covers the intervening body sweep,
+so clearance is checked over the entire interval.
+
+11
+00:00:59,500 --> 00:01:04,385
+The filter coordinates motion and posture, then verifies dispatch.
+
+12
+00:01:04,856 --> 00:01:12,600
+The clearance guarantee requires valid coverage,
+support, map, and timing bounds, with static obstacles.
+
+13
+00:01:13,500 --> 00:01:18,833
+The same core is demonstrated with Go2, Go2W, and G1.
+
+14
+00:01:19,383 --> 00:01:24,311
+These recordings show three-dimensional
+routes across different embodiments.
+
+15
+00:01:24,861 --> 00:01:30,216
+Each platform retains its native locomotion and calibrated interface.
+
+16
+00:01:32,500 --> 00:01:40,948
+Across 360 Go2 simulation tasks, safe completion reaches 93.9 percent.
+
+17
+00:01:41,498 --> 00:01:47,557
+Full-cycle latency is 13.1 percent lower than Rollout-CBF.
+
+18
+00:01:48,107 --> 00:01:55,488
+On 180 common-safe tasks, traversal is
+19.0 percent shorter than stop-lower-go.
+
+19
+00:01:56,500 --> 00:02:08,511
+On held-out Go2W and G1, frozen-core reuse
+reduces adaptation time by 43.3 to 53.6 percent.
+
+20
+00:02:08,952 --> 00:02:12,600
+Success stays within two percentage points of retuning.
+
+21
+00:02:13,500 --> 00:02:20,049
+On the Go2 EDU, 90 hardware trials yield 85 safe completions.
+
+22
+00:02:20,599 --> 00:02:28,919
+The ninety-fifth percentile full-cycle latency
+is 15.4 milliseconds on the onboard Orin NX.
+
+23
+00:02:33,633 --> 00:02:40,140
+These separate recordings show stair and
+obstacle negotiation with pedestrian crossings.
+
+24
+00:02:40,690 --> 00:02:46,429
+They complement the gate benchmark;
+its success count is not pedestrian-specific.
+
+25
+00:02:47,300 --> 00:02:55,535
+Execution-aware body envelopes connect motion and
+posture for reusable three-dimensional clearance navigation.
+

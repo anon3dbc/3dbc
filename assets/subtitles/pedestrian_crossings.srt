@@ -1,0 +1,10 @@
+1
+00:00:00,500 --> 00:00:07,007
+These separate recordings show stair and
+obstacle negotiation with pedestrian crossings.
+
+2
+00:00:07,557 --> 00:00:13,295
+They complement the gate benchmark;
+its success count is not pedestrian-specific.
+

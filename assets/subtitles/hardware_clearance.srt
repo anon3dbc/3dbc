@@ -1,0 +1,9 @@
+1
+00:00:00,500 --> 00:00:07,049
+On the Go2 EDU, 90 hardware trials yield 85 safe completions.
+
+2
+00:00:07,599 --> 00:00:15,919
+The ninety-fifth percentile full-cycle latency
+is 15.4 milliseconds on the onboard Orin NX.
+

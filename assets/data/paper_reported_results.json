@@ -1,0 +1,83 @@
+{
+  "type": "paper_reported_aggregates",
+  "note": "These are aggregates reported in the manuscript, not raw trial records. The individual videos in this repository are not linked to trial IDs.",
+  "platforms_shown": [
+    "Go2",
+    "Go2W",
+    "G1"
+  ],
+  "simulation": {
+    "source": "Table III, native and matched Go2 tracks",
+    "obstacles": "static",
+    "tasks": 360,
+    "common_safe_traversal_tasks": 180,
+    "ours": {
+      "safe_completions": 338,
+      "success_percent": 93.9,
+      "traversal_s": 22.6,
+      "full_cycle_p95_ms": 14.6
+    },
+    "strongest_native": {
+      "method": "3D RoA",
+      "success_percent": 90.0
+    },
+    "rollout_cbf_adaptation": {
+      "success_percent": 92.2,
+      "full_cycle_p95_ms": 16.8
+    },
+    "stop_lower_go": {
+      "success_percent": 88.9,
+      "traversal_s": 27.9
+    },
+    "scope": "Traversal time is calculated only on the 180-task common-safe intersection. The Rollout-CBF 3D/posture version is an adaptation evaluated in this paper."
+  },
+  "transfer": {
+    "source": "Table II",
+    "comparison_order": "frozen core / retuned core",
+    "common_feasible_tasks_per_platform": 120,
+    "held_out": [
+      {
+        "platform": "Go2W",
+        "common_success_percent": [
+          95.0,
+          95.8
+        ],
+        "adaptation_min": [
+          52,
+          112
+        ]
+      },
+      {
+        "platform": "G1",
+        "common_success_percent": [
+          93.3,
+          94.2
+        ],
+        "adaptation_min": [
+          68,
+          120
+        ]
+      }
+    ],
+    "scope": "Platform interfaces are calibrated; frozen core does not mean zero target adaptation."
+  },
+  "hardware": {
+    "source": "Table VI",
+    "platform": "Go2 EDU",
+    "tasks": 90,
+    "ours_safe_completions": 85,
+    "ours_full_cycle_p95_ms": 15.4,
+    "scope": "Gate benchmark: 30 low, 30 turning, and 30 successive-gate tasks. Pedestrian footage is a separate qualitative demonstration."
+  },
+  "delay_sensitivity": {
+    "source": "Fig. 3(b)",
+    "trials_per_condition": 100,
+    "added_delay_ms": 150,
+    "safe_completions": {
+      "ours": 87,
+      "fixed_preview": 74,
+      "posture_cbf": 61
+    }
+  },
+  "guarantee_scope": "Conditional verified-segment clearance for static obstacles with valid body and sweep containment, model, support, map-error, timing, and queue assumptions."
+}

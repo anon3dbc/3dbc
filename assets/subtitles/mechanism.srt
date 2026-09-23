@@ -1,0 +1,35 @@
+1
+00:00:00,500 --> 00:00:05,023
+A lower posture command does not instantly lower the robot.
+
+2
+00:00:05,573 --> 00:00:10,330
+Queued commands and finite response determine when the body changes.
+
+3
+00:00:10,880 --> 00:00:16,725
+We predict an enclosing cylinder whose
+height and radius follow that execution.
+
+4
+00:00:18,500 --> 00:00:22,831
+Checking predicted poses alone can miss contact between them.
+
+5
+00:00:23,381 --> 00:00:29,141
+We enlarge endpoint envelopes using bounded motion and shape-change rates.
+
+6
+00:00:29,691 --> 00:00:36,219
+Their union covers the intervening body sweep,
+so clearance is checked over the entire interval.
+
+7
+00:00:37,500 --> 00:00:42,385
+The filter coordinates motion and posture, then verifies dispatch.
+
+8
+00:00:42,856 --> 00:00:50,600
+The clearance guarantee requires valid coverage,
+support, map, and timing bounds, with static obstacles.
+
