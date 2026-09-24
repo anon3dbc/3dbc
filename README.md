@@ -36,4 +36,4 @@ Go2 simulation: **338/360** safe completions. Held-out Go2W and G1 use the share
 
 ![Simulation results](assets/images/evaluation.png)
 
-The source code will be released upon acceptance. [Experiment details](docs/demo_details.md).
+The source code will be released upon acceptance.
