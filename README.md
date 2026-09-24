@@ -6,13 +6,11 @@ We coordinate route, posture, and execution to navigate three-dimensional body-c
 
 ## Overview
 
-<!-- In the GitHub README editor, attach assets/videos/overview_inline.mp4 on the next line. -->
-
+https://github.com/user-attachments/assets/e6371a65-e60b-4c76-b409-f452dc0088e6
 
 ## Real-Robot Experiments
 
-<!-- Attach assets/videos/three_trial_hardware.mp4 on the next line. -->
-
+https://github.com/user-attachments/assets/aa15ae23-0065-464d-9494-18eb3a2f6e0e
 
 Three Go2 recordings show low-clearance navigation and pedestrian crossings. The paper's **85/90** hardware result concerns the gate benchmark; these clips are qualitative examples.
 
@@ -20,8 +18,7 @@ Three Go2 recordings show low-clearance navigation and pedestrian crossings. The
 
 **Go2, Go2W, and G1**
 
-<!-- Attach assets/videos/cross_embodiment.mp4 on the next line. -->
-
+https://github.com/user-attachments/assets/c4edd35c-480e-43d1-9244-3e3f774fcd6b
 
 ![Additional simulation scenes](assets/images/simulation_scenes.jpg)
 
@@ -31,8 +28,7 @@ Platform-specific contracts feed a shared clearance planner, followed by sweep c
 
 ![Method architecture](assets/images/architecture.png)
 
-<!-- Attach assets/videos/mechanism.mp4 on the next line. -->
-
+https://github.com/user-attachments/assets/67cb114b-9baf-445b-b2a0-8fa6652c4a01
 
 ## Evaluation
 
